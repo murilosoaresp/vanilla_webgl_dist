@@ -1,4 +1,4 @@
-import { Vec2D, UiAlRect, AlRect2D } from 'vanilla_core';
+import { Vec2D, UiAlRect, AlRect2D } from 'vanilla_math';
 
 declare class Float32List {
     private array;

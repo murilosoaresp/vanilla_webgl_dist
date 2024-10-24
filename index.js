@@ -1,4 +1,4 @@
-import { Vec2D } from 'vanilla_core';
+import { Vec2D } from 'vanilla_math';
 import { BrowserExtensions } from 'vanilla_browser';
 
 class Float32List {
@@ -138,7 +138,7 @@ var GlUtils;
         let worldShift = canvas_window_al_rect.center().shift_to(vec_window_coords).flip_y();
         worldShift.x = (worldShift.x / canvas_window_al_rect.width) * world_camera.width;
         worldShift.y = (worldShift.y / canvas_window_al_rect.height) * world_camera.height;
-        let worldPos = worldShift.plus(world_camera.center);
+        let worldPos = worldShift.plus_vec(world_camera.center());
         return worldPos;
     }
     GlUtils.window_coords_to_world_coords = window_coords_to_world_coords;
